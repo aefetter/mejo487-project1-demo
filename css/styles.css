@@ -1,0 +1,666 @@
+/* suggested by copilot because I was having a super hard time with switching color of images on hover */
+:root {
+  --blue-chart-pos: -5px -5px;
+  --green-chart-pos: -5px -137px;
+  --blue-chat-pos: -61px -5px;
+  --green-chat-pos: -61px -137px;
+  --blue-dash-pos: -129px -5px;
+  --green-dash-pos: -129px -137px;
+  --blue-note-pos: -5px -71px;
+  --green-note-pos: -204px -5px;
+  --blue-people-pos: -65px -71px;
+  --green-people-pos: -200px -71px;
+  --blue-tag-pos: -138px -71px;
+  --green-tag-pos: -204px -137px;
+}
+
+.container{
+  margin-bottom: 20px;
+}
+body{
+  font-family: 'Myriad Pro', sans-serif;
+  width: 100%;
+}
+
+p{
+  line-height: 1;
+}
+
+h2{
+  /* used for "dashboard */
+  font-size: 36px;
+  color: white;
+}
+
+h3{
+  /* used for "tasks", etc (main body headings) */
+  font-size: 32pt;
+  color: #2498f4;
+}
+
+h4{
+  /* used for grey subheadings */
+  font-size: 13pt !important;
+  color: #999999;
+}
+.blue-header{
+  background-color: #2191ea;
+  border:1px solid black;
+  min-height: 100px;
+}
+
+a {
+  color: #cccccc;
+  text-decoration: none;
+}
+a:active{
+  color: #2498f2;
+}
+a:hover {
+  color: #2498f2;
+}
+
+
+
+.dark-blue-nav{
+  /* background-color: #0e406f; */
+  min-height: 50px;
+  margin-bottom: 0px;
+  padding: 10px;
+  padding-bottom: 0px;
+  background-image: url('../images/blue-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+}
+
+
+.green-dash-box{
+  background-color: #33cc66;
+  min-height: 50px;
+  margin-top: 1% !important;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.blue-top-box{
+  background-color: #2191ea;
+  border:1px solid black;
+  padding: 1%;
+}
+
+.header-icons {
+  /* help from copilot, keeps mini of raleigh & icons aligned */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.menu-icons{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.header-icons p {
+  /* acts on the p class aka the text, rrmoves margins and make the line height (think notebook line width) the same */
+  margin: 0; /* Removes default margin */
+  line-height: 1; /* Ensures the text height matches the icon height */
+}
+
+.pink-box{
+  background-color: lightpink;
+  border:1px solid black;
+  min-height: 100px;
+}
+
+.grey-box{
+  background-color: lightgrey;
+  border:1px solid black;
+  min-height: 100px;
+}
+
+
+.footer{
+  /* sticky footer */
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+  background-color: #f5f5f5;
+}
+
+
+.search-form {
+  display: flex;
+  align-items: center;
+  position: relative;
+} 
+.search-form .form-control {
+  flex: 1;
+  padding-right: 30px; /* Add padding to make space for the icon */
+}
+
+.search-form .search-icon {
+  position: absolute;
+  right: 10px;
+  color: blue; /* Set the icon color to blue */
+  cursor: pointer;
+}
+
+/* for arrows on top nav */
+.arrow-on {
+  background-image: url('../images/white-arrow.png') !important; /* Set the image */
+  background-size: contain; /* Ensure the image scales correctly */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  width: 90%;
+  height: 24px;
+  margin-top: 10%;
+  opacity: 0;
+}
+/* copilot suggested this to help with alignment between nav icon and arrow */
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* these are for changing the color of the icons on the sprites and movng the arrow. I had github copilot help me with hover states */
+.nav-item:hover .arrow-on {
+  opacity: 1;
+}
+
+.nav-item:hover .sprite-nav-blue-chart {
+  background-position: var(--green-chart-pos);
+}
+
+.nav-item:hover .sprite-nav-blue-chat {
+  background-position: var(--green-chat-pos);
+}
+
+.nav-item:hover .sprite-nav-blue-dash {
+  background-position: var(--green-dash-pos);
+}
+
+.nav-item:hover .sprite-nav-blue-note {
+  background-position: var(--green-note-pos);
+}
+
+.nav-item:hover .sprite-nav-blue-people {
+  background-position: var(--green-people-pos);
+}
+
+.nav-item:hover .sprite-nav-blue-tag {
+  background-position: var(--green-tag-pos);
+}
+
+.grey-gradient-body{
+    position: relative;
+    border-radius: 10px;
+    padding: 30px;
+    margin-left: 40px;
+    background: linear-gradient(to bottom, #f6f6f6 0%, #fff 500px, #fff 100%);
+}
+
+.inner-contents{
+  background: white;
+}
+
+/* for the orange announcement text */
+.orange-text{
+  color: #fe7f13;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* styling for tasks */
+
+#tasks-title {
+  display: flex;
+  line-height: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tasks-title > img {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+}
+
+/* styling the item for task list */
+
+.task-list-item{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+/* hover state for task list, copilot instructed me to target each item individually */
+
+.task-list-item:hover .dot {
+  background-color: #cccccc; /* Change dot color on hover */
+}
+
+.task-list-item:hover .task-text {
+  color: #cccccc; /* Change text color on hover */
+}
+
+.task-list-item:hover .people-icon-count img {
+  filter: grayscale(100%); /* Change icon color to grey on hover */
+}
+
+.task-list-item:hover .people-icon-count p {
+  color: #cccccc; /* Change text color on hover */
+}
+
+/* making the green circles, from w3 schools, then asked copilot how to align the number to the center */
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #33cc66;
+  border-radius: 50%;
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  color: white; /* Set text color to white for better contrast */
+  font-weight: bold; /* Optional: make the number bold */
+}
+
+/* I needed flex */
+.dot-and-text{
+  display: flex;
+  align-items: center;
+  color:#2498f4;
+}
+
+/* suggested by copilot when I asked to help with spacing between dot and text */
+.dot-and-text > .dot {
+  margin-right: 10px; /* Add space to the right of the dot */
+}
+
+/* for the people count icon on the right of the task list */
+.people-icon-count{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid #e1e1e1;
+    padding: 5px 5px 0px 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 55px;
+    height: auto;
+}
+
+.people-icon-count img{
+    width: 20px;
+    height: 20px;
+}
+
+.people-icon-count p{
+    margin: 0;
+    font-size: 12px;
+    color: #2498f3;
+}
+
+/* for rec items */
+.icon-and-text{
+  display: flex;
+  align-items: center;
+  color:#2498f4;
+  line-height: 1;
+  justify-content: space-between;
+}
+
+.rec-sub-text{
+  font-size: 8px;
+  color: #cccccc;
+}
+.rec-text{
+  font-size: 16px;
+  color: black;
+}
+
+.rec-list-item{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e1e1e1;
+}
+.rec-list-item:hover p{
+  color: #cccccc;
+}
+
+.rec-list-item:hover img{
+  filter: grayscale(100%);
+}
+
+
+.rec-icon{
+  margin-right: 20px;
+}
+
+/* dropdown button styling */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: #fe7f13;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the Dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change Color of Dropdown Links on Hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the Dropdown Menu on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the Background Color of the Dropdown Button when the Dropdown Content is Shown */
+.dropdown:hover .dropbtn {
+  background-color: #0e406f;
+}
+
+.activity-and-dropdown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bar-chart{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.pie-chart{
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+/* for the contact influencers section */
+.contact-container {
+  height: 250px;
+  width: 300px;
+  position: relative;
+  border: #cccccc 1px solid;
+  border-radius: 5px;
+  margin: 20px 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.green-contact {
+  width: 80px;
+  height: 80px;
+  top: -20px;
+  position: absolute;
+  /* trying to get it to peek out */
+}
+
+.ribbon-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -40px;
+  width: 100%;
+}
+
+.ribbon {
+  color: white;
+  background-color: #2394ee;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.ribbon-left, .ribbon-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: auto;
+}
+
+.ribbon-left {
+  left: -15px; 
+}
+
+.ribbon-right {
+  right: -15px;
+} 
+
+.contacts-text{
+  font-size: 22pt;
+}
+
+.influencers-text{
+  font-size: 12pt;
+}
+/* had to use position absolute on the chart since it kept messing up the ribbon (asked copilot */
+.contact-chart {
+  position: absolute;
+  width: 80%;
+  height: auto;
+  top: 70%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to center */
+}
+
+.light-blue-box{
+  background-color: #2498f4;
+  /* min-height: 100px; */
+  color: white;
+  border-radius: 10px;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#know-box{
+  font-size: 15pt;
+  padding: 5%;
+}
+
+/* same principle as ribbon */
+
+.arrow-left {
+  position: absolute;
+  left: -9px;
+  top: 50%;
+  height: 50px;
+  width: auto;
+  transform: translateY(-50%);
+}
+
+.arrow-right {
+  right: -9px;
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: auto;
+  transform: translateY(-50%) scaleX(-1);
+} 
+
+/* for the ads box */
+.ads-box {
+  background-color: #2498f4;
+  color: white;
+  height: 250px;
+  position: relative;
+  display: flex;
+  margin-top: 20px !important;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+.ads-img {
+  width: 80%;
+  height: auto;
+  align-items: center;
+}
+
+.ads-img:hover {
+  width: 100%;
+  height: auto;
+}
+
+.grey-border{
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0px;
+}
+
+.grey-border-right{
+  border-right: 1px solid #e1e1e1;
+  margin: 0px;
+}
+
+
+/* social check boxes */
+#facebook {
+  background-color: #114570;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#twitter {
+  background-color: #00aced;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#foursquare {
+  background-color: #0072b1;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+#googleplus {
+  background-color: #31cc66;
+  color: white;
+  border-radius: 3px;
+  padding: 2px;
+}
+
+.checkbox {
+  margin-right: 10px; /* Add some space between the checkbox and the label */
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footer{
+  background-color: #f4f4f4;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  bottom: 0;
+  position: fixed;
+  
+}
+/* footer yippee */
+.footer-links{
+  display: flex;
+  justify-content: right;
+  gap: 2%;
+  align-items: center;
+}
+
+.footer-updates{
+  color: #cccccc;
+}
+
+.footer-updates-box{
+  display: flex;
+  justify-content: right;
+  gap: 5%;
+  align-items: center;
+}
+.footer-updates-box > img{
+  width: 10px;
+  height: 10px;
+  align-items: center;
+}
+
+.bluey{
+  color:#2498f2;
+  font-weight: bold;
+}
+
+.logout{
+  display: flex;
+  align-items: center;
+}
+
+.social-icons{
+  display:flex;
+  align-items: center;
+}
+
+/* trying to make some things responsive */
+@media (max-width:600px){
+  .ads-box{
+    height: auto;
+    align-items: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important; /* Center align links */
+    margin: 10px 0; /* Add margin for spacing */
+  }
+
+  .footer-links a {
+    margin: 5px 0; /* Add margin between links */
+  }
+}

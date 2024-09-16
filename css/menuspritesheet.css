@@ -1,0 +1,80 @@
+.sprite {
+    background-image: url(../images/menuspritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-nav-blue-chart {
+    width: 46px;
+    height: 56px;
+    background-position: -5px -5px;
+    z-index: 1;
+}
+
+.sprite-nav-blue-chat {
+    width: 58px;
+    height: 56px;
+    background-position: -61px -5px;
+}
+
+.sprite-nav-blue-dash {
+    width: 65px;
+    height: 56px;
+    background-position: -129px -5px;
+}
+
+.sprite-nav-blue-note {
+    width: 50px;
+    height: 56px;
+    background-position: -5px -71px;
+}
+
+.sprite-nav-blue-people {
+    width: 63px;
+    height: 56px;
+    background-position: -65px -71px;
+}
+
+.sprite-nav-blue-tag {
+    width: 52px;
+    height: 56px;
+    background-position: -138px -71px;
+}
+
+
+.sprite-nav-green-chart {
+    width: 46px;
+    height: 56px;
+    background-position: -5px -137px;
+}
+
+.sprite-nav-green-chat {
+    width: 58px;
+    height: 56px;
+    background-position: -61px -137px;
+}
+
+.sprite-nav-green-dash {
+    width: 65px;
+    height: 56px;
+    background-position: -129px -137px;
+}
+
+.sprite-nav-green-note {
+    width: 50px;
+    height: 56px;
+    background-position: -204px -5px;
+}
+
+.sprite-nav-green-people {
+    width: 63px;
+    height: 56px;
+    background-position: -200px -71px;
+}
+
+.sprite-nav-green-tag {
+    width: 52px;
+    height: 56px;
+    background-position: -204px -137px;
+}
+

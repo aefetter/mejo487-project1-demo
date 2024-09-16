@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>MEJO 487 Project 1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/starter-template/">
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+    <!-- font awesome link for some icons, sorry lazy didn't want to save them all -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- adding myriad pro font from adobe -->
+    <link rel="stylesheet" href="https://use.typekit.net/wwk7tgh.css">
+    <!-- spritesheet -->
+    <link href="css/menuspritesheet.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row blue-top-box">
+        <div class="col-md-9"></div>
+        <div class="col-md-3">
+          <span class="header-icons">
+            <p>MINI of Raleigh</p>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-regular fa-circle-question"></i>
+          </span>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+        <div class="row dark-blue-nav">
+          <!-- main menu -->
+          <div class="col-md-3"></div>
+          <!-- <div class="col-md-6">
+            <div class="row"> -->
+              <div class="col-md-6 menu-icons">
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-dash"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-people"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-chat"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-tag"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-note"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+                <div class="nav-item">
+                  <a href="#">
+                  <i class="sprite sprite-nav-blue-chart"></i>
+                  <div class= "arrow-on"></div>
+                  </a>
+                </div>
+              </div>
+            <!-- </div>
+        </div> -->
+          <div class="col-md-3"></div>
+        </div>
+      </div>
+    </div> 
+    <!-- end of container fluid -->
+  <div class="container">
+    <!-- green search box -->
+    <div class="row green-dash-box">
+      <div class="col-md-9">
+        <h2>Dashboard</h2>
+      </div>
+      <div class="col-md-3">
+        <form action="/search" method="GET" class="search-form">
+          <!-- generated using GitHub copilot chat in vscode -->
+          <input type="search" name="query" class="form-control">
+          <i class="fas fa-search search-icon"></i>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container grey-gradient-body">
+    <div class="inner-contents">
+    <!-- main container grey gradient box -->
+     <div class="row grey-border">
+      <div class="col-md-2 orange-text">ANNOUNCEMENTS</div>
+      <div class="col-md-9">Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus sagittis lacus</div>
+      <div class="col-md-1">
+        <img src="images/left-arrow-orange.png" alt="arrow right">
+        <img src="images/right-arrow-orange.png" alt="arrow left">
+      </div>
+     </div>
+    <div class="row">
+      <div class="col-md-4 column-left grey-border-right">
+        <div id="tasks-title">
+          <h3>Tasks</h3>
+          <img src="images/settings-icon.png" alt="settings gear">
+        </div>
+        <div class="task-list-item">
+          <div class="dot-and-text">
+            <div class="dot">1</div>
+            <div class="task-text">Welcome Contacts</div>
+          </div>
+          <div class="people-icon-count">
+            <img src="images/blue-people-icon.png" alt="people icon">
+            <p>32</p>
+          </div>
+        </div>
+        <div class="task-list-item">
+          <div class="dot-and-text">
+            <div class="dot">2</div>
+            <div class="task-text">Provide Responses</div>
+          </div>
+          <div class="people-icon-count">
+            <img src="images/blue-people-icon.png" alt="people icon">
+            <p>36</p>
+          </div>
+        </div>
+        <div class="task-list-item">
+          <div class="dot-and-text">
+            <div class="dot">3</div>
+            <div class="task-text">Review Activity</div>
+          </div>
+          <div class="people-icon-count">
+            <img src="images/blue-people-icon.png" alt="people icon">
+            <p>36</p>
+          </div>
+        </div>
+        <div class="task-list-item">
+          <div class="dot-and-text">
+            <div class="dot">4</div>
+            <div class="task-text">Review Activity</div>
+          </div>
+          <div class="people-icon-count">
+            <img src="images/blue-people-icon.png" alt="people icon">
+            <p>3</p>
+          </div>
+        </div>
+        <div id="tasks-title">
+          <h3>Recommendations</h3>
+        </div>
+        <div class="rec-list-item">
+          <div class="icon-and-text">
+            <div class="rec-icon"> <img src="images/article-icon.png" alt="aricle icon"></div>
+            <div>
+              <p class="rec-sub-text">Article</p>
+              <p class="rec-text">7 Steps to getting more Fans</p>
+            </div>
+          </div>
+        </div>
+        <div class="rec-list-item">
+          <div class="icon-and-text">
+            <div class="rec-icon"> <img src="images/article-icon.png" alt="aricle icon"></div>
+            <div>
+              <p class="rec-sub-text">Article</p>
+              <p class="rec-text">Increase traction with more interactions</p>
+            </div>
+          </div>
+        </div>
+        <div class="rec-list-item">
+          <div class="icon-and-text">
+            <div class="rec-icon"> <img src="images/checklist-icon.png" alt="checklist icon"></div>
+            <div>
+              <p class="rec-sub-text">Checklist</p>
+              <p class="rec-text">Creating a Promotion</p>
+            </div>
+          </div>
+        </div>
+        <div class="rec-list-item">
+          <div class="icon-and-text">
+            <div class="rec-icon"> <img src="images/tip-icon.png" alt="lightbulb icon"></div>
+            <div>
+              <p class="rec-sub-text">Tip</p>
+              <p class="rec-text">Share More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end of col 4 -->
+    <div class="col-md-8">
+        <div class="analytics">
+          <h3>Analytics</h3>
+          <div class="row">
+            <div class="col-md-10">
+              <div class="activity-and-dropdown">
+              <h4>ACTIVITY</h4>
+              <!-- copilot helped me build the dropdown -->
+              <div class="dropdown">
+                <button class="dropbtn">06/28/11-07/21/11</button>
+                <div class="dropdown-content">
+                  <a href="#">06/01/11-06/27/11</a>
+                  <a href="#">06/28/11-07/21/11</a>
+                  <a href="#">7/22/11-08/09/11</a>
+                </div>
+              </div>
+              </div>
+              <img class= "bar-chart" src="images/activity-bar-chart.png" alt="activity bar chart">
+            </div>
+            <div class="col-md-2">
+              <h4>CHANNELS</h4>
+              <img class= "pie-chart" src="images/channels-chart.png" alt="channels pie chart">
+              <h4>REFERRALS</h4>
+              <img class= "pie-chart" src="images/referrals-chart.png" alt="referrals pie chart">
+            </div>
+          </div>
+          </div>
+          <!-- I gave up with the images so I made normal check boxes -->
+          <div class="socials">
+            <input type="checkbox" id="facebook" class="checkbox">
+            <label for="facebook" class="checkbox-label"></label>
+            <span id="facebook">Facebook</span>
+          
+            <input type="checkbox" id="twitter" class="checkbox">
+            <label for="twitter" class="checkbox-label"></label>
+            <span id="twitter">Twitter</span>
+          
+            <input type="checkbox" id="foursquare" class="checkbox">
+            <label for="foursquare" class="checkbox-label"></label>
+            <span id="foursquare">Foursquare</span>
+          
+            <input type="checkbox" id="googleplus" class="checkbox">
+            <label for="googleplus" class="checkbox-label"></label>
+            <span id="googleplus">Google+</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-container">
+                <img class= "green-contact" src = "images/green-contact.png" alt="green contact">
+                <div class="ribbon-container">
+                  <img class = "ribbon-left" src="images/ribbon-left.png" alt="ribbon on the left side for style">
+                  <div class="ribbon">
+                    <p class="contacts-text">75 Contacts</p>
+                    <p class="influencers-text">4 Influencers</p>
+                   </div>
+                   <img class = "ribbon-right" src="images/ribbon-right.png" alt="ribbon on the rught side for style">
+                  </div>
+              <img class = "contact-chart" src = "images/green-chart.png" alt="green chart">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-container">
+              <img class= "green-contact" src = "images/orange-person.png" alt="green contact">
+              <div class="ribbon-container">
+                <img class = "ribbon-left" src="images/ribbon-left.png" alt="ribbon on the left side for style">
+                <div class="ribbon">
+                  <p class="contacts-text">75 Contacts</p>
+                  <p class="influencers-text">4 Influencers</p>
+                 </div>
+                 <img class = "ribbon-right" src="images/ribbon-right.png" alt="ribbon on the rught side for style">
+                </div>
+            <img class = "contact-chart" src = "images/orange-chart.png" alt="green chart">
+          </div>
+          </div>
+          <div class="row light-blue-box">
+            <div id="know-box">
+              <p>DID YOU KNOW? <br> Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod.</p>
+              <a href="#">
+                <img class="arrow-left" src="images/dyk-arrow-left.png" alt="arrow left">
+              </a>
+              <a href="#">
+              <img class="arrow-right" src="images/dyk-arrow-left.png" alt="arrow left">
+              </a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row ads-box">
+        <!-- ad box at bottom -->
+         <div class="col-md-4">
+          <img class="ads-img" src="images/message-management.png" alt="message management graphic">
+         </div>
+         <div class="col-md-4">
+          <img class= "ads-img" src="images/see-how-others.png" alt="a group of people">
+         </div>
+         <div class="col-md-4">
+          <img class="ads-img" src="images/version-2.png" alt="version 2 is coming">
+         </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- end container -->
+  </div> 
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-3">
+      <div class="footer-links">
+        <a href="#">Tutorials</a>
+        <a href="#">Support</a>
+        <a href="#">Blog</a>
+      </div>
+    </div>
+    <div class="col-md-5 footer-updates-box">
+        <p class="footer-updates" ><span class= "bluey">Ariel Winter</span> likes your <span class= "bluey"> Win A Cooper Sweepstakes</span> Promotion</p>
+        <img src="images/up-arrow.png" alt="up arrow">
+    </div>
+    <div class="col-md-1 logout">
+      <img src="images/avatar.png" alt="avatar">
+      <a href="#">Logout</a>
+    </div>
+    <div class="col-md-1 social-icons">
+      <a href="#"><img src="images/social-icons.png"></a>
+    </div>
+    <div class="col-md-1"></div>
+    </div>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById('nav-toggle').addEventListener('click', function() {
+        document.getElementById('nav-links').classList.toggle('active');
+      });
+  </script>
+      
+  </body>
+</html>
